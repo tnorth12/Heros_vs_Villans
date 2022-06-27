@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/super_types/',include('super_types.urls')),
     path('api/supers/',include('supers.urls'))
-    
+        
 ]
+
