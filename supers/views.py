@@ -25,7 +25,7 @@ def supers_list(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def supers_detail(request, pk):
-    supers = get_object_or_404(supers, pk=pk)
+    supers = get_object_or_404(Super, pk=pk)
     if request.method == 'GET':
         
         serializer = SuperSerializer(supers)
