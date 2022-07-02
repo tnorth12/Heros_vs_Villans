@@ -24,7 +24,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/supers/1/",
+					"raw": "http://127.0.0.1:8000/api/supers/2/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -36,7 +36,7 @@
 					"path": [
 						"api",
 						"supers",
-						"1",
+						"2",
 						""
 					]
 				}
@@ -165,6 +165,88 @@
 					"path": [
 						"api",
 						"supers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET super type (Bonus / Hero Query)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supers?super_type=Hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supers"
+					],
+					"query": [
+						{
+							"key": "super_type",
+							"value": "Hero"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET super type (Bonus / Villian Query)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supers?super_type=Villian",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supers"
+					],
+					"query": [
+						{
+							"key": "super_type",
+							"value": "Villian"
+						}
 					]
 				}
 			},
